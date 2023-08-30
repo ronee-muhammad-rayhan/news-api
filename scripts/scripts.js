@@ -13,7 +13,11 @@ const loadCatagories = async() => {
     `
     tabContainer.appendChild(tabDiv);
     });
+    const seeAllTab = document.createElement('a');
+    seeAllTab.classList.add('tab');
+    seeAllTab.innerText = 'See All';
 
+    tabContainer.appendChild(seeAllTab);
 }
 
 loadCatagories();
